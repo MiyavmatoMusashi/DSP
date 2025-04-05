@@ -27,12 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80ca582f-0543-4110-819e-128999d74712" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PriorityQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/PriorityQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="80ca582f-0543-4110-819e-128999d74712" name="Changes" comment="ikinci" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,8 +104,17 @@
       <workItem from="1743759133321" duration="1461000" />
       <workItem from="1743762314949" duration="45000" />
       <workItem from="1743762523877" duration="3481000" />
-      <workItem from="1743862609315" duration="311000" />
+      <workItem from="1743862609315" duration="455000" />
     </task>
+    <task id="LOCAL-00001" summary="ikinci">
+      <option name="closed" value="true" />
+      <created>1743862960286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743862960286</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,5 +124,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ikinci" />
+    <option name="LAST_COMMIT_MESSAGE" value="ikinci" />
   </component>
 </project>
