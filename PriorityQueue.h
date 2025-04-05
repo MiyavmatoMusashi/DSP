@@ -1,18 +1,20 @@
 //
 // Created by Berat on 4.04.2025.
 //
-
 #ifndef PRIORITYQUEUE_H
 #define PRIORITYQUEUE_H
 
+#include <queue>
+#include <vector>
+using namespace std;
+
 class PriorityQueue {
     private:
-        std::vector<std::queue<int>> levels;
-        int numLevels;
+        vector<queue<int>> queues;
 
     public:
-        PriorityQueue(int levels = 2); //add by berat note: ther is two level only for now it can change
-        void insert(int id, int level);
+        PriorityQueue(int levels = 2); : queues(levels) {};
+        PriorityQueue(int user_input); : queues(user_input) {};
 
 };
 #endif //PRIORITYQUEUE_H
