@@ -7,12 +7,12 @@ using namespace std;
 
 int main()
 {
-  int i=8;
-  int j=3;
-  int k=1;
-  int l=1;
-  int m=21;
-  int n=1;
+  int i=8; // MoveUp
+  int j=3; // MoveDown
+  int k=1; // MoveDown
+  int l=1; // MoveUp
+  int m=21;  // Remove
+  int n=1;   // Remove
 
   PriorityQueue pq(3);
 
