@@ -4,17 +4,21 @@
 #ifndef PRIORITYQUEUE_H
 #define PRIORITYQUEUE_H
 
-#include <queue>
+#include <list>
 #include <vector>
-using namespace std;
 
-class PriorityQueue {
-    private:
-        vector<queue<int>> queues;
+class PriorityQueue
+{
+private:
+    int levels;
+    std::vector<std::list<int>> queues;
 
-    public:
-        PriorityQueue(int levels = 2); : queues(levels) {};
-        PriorityQueue(int user_input); : queues(user_input) {};
-
+public:
+    explicit PriorityQueue(int numLevels = 2);
+    void insert(int id, int level);
+    void moveUp(int id);
+    void moveDown(int id);
+    void remove(int id);
+    void printQueues() const;
 };
-#endif //PRIORITYQUEUE_H
+#endif // PRIORITYQUEUE_H
