@@ -15,6 +15,18 @@ PriorityQueue::PriorityQueue(int numLevels) : levels(numLevels)
 
 void PriorityQueue::insert(int id, int level)
 {
+  if (level < 0 || level >= levels) {
+      cerr<< "Invalid level: " << level <<endl;
+    return;
+  }
+
+  // If this id exists at every level, delete it
+  for (auto& queue : queues) {
+    queue.remove(id);
+  }
+
+  // Add to relevant level
+  queues[level].push_back(id);
 }
 
 void PriorityQueue::moveUp(int id)
@@ -41,16 +53,16 @@ void PriorityQueue::moveUp(int id)
 
 void PriorityQueue::moveDown(int id)
 {
-  for (int i = 0; i < levels; ++i) // Tüm seviyeler kontrol edilsin
+  for (int i = 0; i < levels; ++i) // Check all levels
   {
     auto &queue = queues[i];
     auto it = find(queue.begin(), queue.end(), id);
 
     if (it != queue.end())
     {
-      if (i == levels - 1) // Zaten en alt seviyedeyse (Q2)
+      if (i == levels - 1) // If it is already at the lowest level (Q2)
       {
-        return; // Aşağı inemez
+        return; // Cannot go any lower level
       }
       queue.erase(it);
       queues[i + 1].push_back(id); // Bir alt seviyeye taşı
@@ -62,6 +74,10 @@ void PriorityQueue::moveDown(int id)
 
 void PriorityQueue::remove(int id)
 {
+   for (auto &queue : queues)
+  {
+    queue.remove(id); // The remove function of std::list finds and removes the ID
+  }
 }
 
 void PriorityQueue::printQueues() const

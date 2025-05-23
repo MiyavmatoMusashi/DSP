@@ -1,11 +1,19 @@
-//
-// Created by Berat on 4.04.2025.
+// Berat_Ermiş_2304010804
+// Berker_Efe_Kendirli_2304010579
+// Mohamed_Hisham_23040010961
 #include "PriorityQueue.h"
 #include <iostream>
 using namespace std;
 
 int main()
 {
+  int i=8;
+  int j=3;
+  int k=1;
+  int l=1;
+  int m=21;
+  int n=1;
+
   PriorityQueue pq(3);
 
   // Insert elements into the Q0 priority queue
@@ -31,23 +39,23 @@ int main()
   pq.printQueues();
 
   // State of the priority queue after moving elements
-  cout << "\nmoveUp(8):" << endl;
-  pq.moveUp(8);
+  cout << "\nmoveUp("<<i<<"):" << endl;
+  pq.moveUp(i);
   pq.printQueues();
 
-  cout << "\nmoveDown(3 & 1):" << endl;
-  pq.moveDown(3);
-  pq.moveDown(1);
+  cout << "\nmoveDown("<<j<<" & "<<k<<"):" << endl;
+  pq.moveDown(j);
+  pq.moveDown(k);
   pq.printQueues();
 
-  cout << "\nmoveUp(1):" << endl;
+  cout << "\nmoveUp("<<l<<"):" << endl;
   pq.moveUp(1);
   pq.moveUp(1);
   pq.printQueues();
 
-  cout << "\nremove(21 & 1):" << endl;
-  pq.remove(21);
-  pq.remove(1);
+  cout << "\nremove("<<m<<" & "<<n<<"):" << endl;
+  pq.remove(l);
+  pq.remove(m);
   pq.printQueues();
 
   system("pause");
