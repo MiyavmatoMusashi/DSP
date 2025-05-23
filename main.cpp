@@ -49,13 +49,13 @@ int main()
   pq.printQueues();
 
   cout << "\nmoveUp("<<l<<"):" << endl;
-  pq.moveUp(1);
-  pq.moveUp(1);
+  pq.moveUp(l);
+  pq.moveUp(l);
   pq.printQueues();
 
   cout << "\nremove("<<m<<" & "<<n<<"):" << endl;
-  pq.remove(l);
   pq.remove(m);
+  pq.remove(n);
   pq.printQueues();
 
   system("pause");
